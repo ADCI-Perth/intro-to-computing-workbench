@@ -1,0 +1,123 @@
+# Episode metadata for the Workbench conversion of Introduction to Computing:
+# week themes, timings, sections, bridges and practice tasks, with questions (q),
+# objectives (o) and key points (k) for each part.
+
+WEEKS = {
+    1: 'Computer fundamentals, a brief history, and hardware',
+    2: 'Data representation and logic',
+    3: 'Software and operating systems',
+    4: 'Algorithms and programming basics',
+    5: 'Networks, the internet and online safety',
+    6: 'Data, the cloud, ethics and society',
+}
+
+# minutes per week: watch, read & practise, bridge, build (the quiz is 15 minutes every week)
+TIME = {1: (50, 110, 30, 120), 2: (45, 120, 30, 120), 3: (45, 115, 30, 120),
+        4: (55, 110, 30, 120), 5: (50, 115, 30, 120), 6: (30, 70, 30, 180)}
+
+SECTIONS = {
+    '1.1': dict(src='week-1/lessons/1.1_what_is_a_computer.md', title='What is a computer?',
+        q=['What does a computer actually do?', 'How did computers get from room-sized machines to phones?'],
+        o=['Explain the difference between data and information.', 'Describe a computer as input, process, output and storage.', 'Put the main generations of computing in order.'],
+        k=['A computer takes input, processes it, stores it and gives output.', 'Each generation of computers was smaller, faster and cheaper than the last.']),
+    '1.2': dict(src='week-1/lessons/1.2_hardware.md', title='Hardware',
+        q=['What are the main parts inside a computer, and what does each one do?'],
+        o=['Describe the CPU (control unit, ALU, registers), motherboard, RAM, ROM and storage.', 'Find the specifications of a computer.'],
+        k=['The CPU follows the fetch-decode-execute cycle.', 'RAM is fast and temporary; storage is slower and permanent.']),
+    '2.1': dict(src='week-2/lessons/2.1_binary_and_hexadecimal.md', title='Binary and hexadecimal',
+        q=['Why do computers use binary?', 'How do I convert between decimal, binary and hexadecimal?'],
+        o=['Convert numbers between decimal, binary and hexadecimal.'],
+        k=['Each binary digit is a bit; 8 bits make a byte.', 'One hex digit stands for 4 bits, so a byte is two hex digits.']),
+    '2.2': dict(src='week-2/lessons/2.2_text_images_and_files.md', title='Text, images and files',
+        q=['How are text, colours and whole files stored as numbers?'],
+        o=['Use ASCII and Unicode to encode text.', 'Read RGB colour codes.', 'Identify a file by its signature in a hex viewer.'],
+        k=['Text, images and files are all stored as numbers.', 'A file signature reveals the real type of a file, whatever its name says.']),
+    '2.3': dict(src='week-2/lessons/2.3_logic_gates.md', title='Logic and logic gates',
+        q=['How can simple on-off switches make decisions and add numbers?'],
+        o=['Complete truth tables for AND, OR, NOT and XOR.', 'Build a half adder in a logic simulator.'],
+        k=['Logic gates combine bits using simple rules.', 'An XOR gate and an AND gate together add two bits.']),
+    '3.1': dict(src='week-3/lessons/3.1_software.md', title='Software',
+        q=['What is the difference between application software and system software?'],
+        o=['Sort software into applications, operating systems and utilities.', 'Explain why updates matter.'],
+        k=['System software runs the computer; application software helps a person do a task.', 'Installing updates quickly is one of the best security habits.']),
+    '3.2': dict(src='week-3/lessons/3.2_operating_systems.md', title='Operating systems and file management',
+        q=['What does an operating system do?', 'How are files and folders organised?'],
+        o=['Describe the main jobs of an operating system.', 'Read absolute and relative file paths.'],
+        k=['The operating system manages the hardware, programs, files and users.', 'A path is the address of a file in the folder tree.']),
+    '3.3': dict(src='week-3/lessons/3.3_command_line.md', title='The Linux command line',
+        q=['How do I control a computer by typing commands?'],
+        o=['Move around folders and manage files with Linux commands.', 'Search a log file with grep.', 'Read and set file permissions.'],
+        k=['The command line is precise, repeatable and widely used in cyber security and data work.', 'Permissions control who can read, write and run each file.']),
+    '4.1': dict(src='week-4/lessons/4.1_problem_solving_and_algorithms.md', title='Problem solving and algorithms',
+        q=['What is an algorithm, and how do I design one?'],
+        o=['Break a problem into steps.', 'Write an algorithm in pseudocode and as a flowchart.'],
+        k=['An algorithm is a precise, step-by-step solution.', 'Pseudocode and flowcharts let you plan before you code.']),
+    '4.2': dict(src='week-4/lessons/4.2_building_blocks.md', title='The building blocks of programs',
+        q=['What are the building blocks every program uses?', 'How do searching algorithms compare?'],
+        o=['Use sequence, selection and repetition in pseudocode.', 'Trace an algorithm with a trace table.', 'Compare linear and binary search.'],
+        k=['Every program is built from sequence, selection and repetition.', 'Binary search is much faster, but only works on sorted data.']),
+    '4.3': dict(src='week-4/lessons/4.3_little_man_computer.md', title='Down to the hardware: the Little Man Computer',
+        q=['How does a CPU run a program, one instruction at a time?'],
+        o=['Run and change a Little Man Computer program in a browser simulator.'],
+        k=['Each instruction is fetched, decoded and executed in turn.', 'Real programs are made of many simple instructions like these.']),
+    '5.1': dict(src='week-5/lessons/5.1_networks_and_the_internet.md', title='Networks and the internet',
+        q=['How does data travel across networks and the internet?'],
+        o=['Explain LANs, WANs, routers and switches.', 'Describe IP addresses, DNS, ports, TCP and UDP.'],
+        k=['Data travels in packets, passed from router to router.', 'DNS turns names into IP addresses.']),
+    '5.2': dict(src='week-5/lessons/5.2_the_web.md', title='The web, HTTP and HTTPS',
+        q=['What happens between my browser and a web server?'],
+        o=['Read a URL and find its real domain.', 'Read requests, status codes and certificates in the browser.'],
+        k=['HTTPS encrypts the connection; a padlock does not mean a site is honest.', 'Status codes tell you what happened to each request.']),
+    '5.3': dict(src='week-5/lessons/5.3_online_safety.md', title='Online safety and cyber security basics',
+        q=['What are the common online threats, and how do I protect against them?'],
+        o=['Explain the CIA triad.', 'Spot common phishing clues.', 'Tell encoding, encryption and hashing apart.'],
+        k=['Most attacks start with a person being tricked.', 'Long unique passphrases and MFA stop most account takeovers.']),
+    '6.1': dict(src='week-6/lessons/6.1_data.md', title='Data',
+        q=['What kinds of data are there, and how should they be looked after?'],
+        o=['Sort data into structured, semi-structured and unstructured.', 'Describe the data lifecycle and data quality.'],
+        k=['Data has a lifecycle, from collection to secure deletion.', 'Collect less: data you never collect cannot leak.']),
+    '6.2': dict(src='week-6/lessons/6.2_the_cloud.md', title='The cloud',
+        q=['What is the cloud, and what are its benefits and risks?'],
+        o=['Explain IaaS, PaaS and SaaS, and public, private and hybrid cloud.', 'Explain data sovereignty and shared responsibility.'],
+        k=['The cloud is other people\'s computers, in data centres.', 'The customer is always responsible for security in the cloud.']),
+    '6.3': dict(src='week-6/lessons/6.3_privacy_ethics_and_society.md', title='Privacy, ethics and society',
+        q=['What protects people\'s data in Australia?', 'How does computing affect society?'],
+        o=['Explain digital footprints, the Privacy Act and the Australian Privacy Principles.', 'Describe the Essential Eight.', 'Discuss bias in AI and the digital divide.'],
+        k=['Health service providers are covered by the Privacy Act, whatever their size.', 'AI systems learn from data, including its biases.']),
+}
+
+BRIDGES = {
+    1: dict(title='Input, process, output, storage', q=['How can every computer be described in the same four steps?'],
+            o=['Describe familiar devices as input, process, output and storage.'], k=['Input, process, output and storage describe every computer system.']),
+    2: dict(title='Bits, bytes and units', q=['Why does a 1 TB drive show less than 1,000 GB?'],
+            o=['Convert between storage units and work out download times.'], k=['Network speeds are in bits per second; file sizes are in bytes.']),
+    3: dict(title='Least privilege', q=['Why should people only have the access they need?'],
+            o=['Apply least privilege to files and accounts.'], k=['Give every person and program only the access they need, and no more.']),
+    4: dict(title='How code becomes something the CPU can run', q=['How does a program in a language like Python reach the CPU?'],
+            o=['Explain compilers and interpreters.'], k=['Compilers and interpreters translate code into instructions the CPU can run.']),
+    5: dict(title='What happens when you type a web address', q=['What happens, step by step, when I open a web page?'],
+            o=['Describe the eight steps from typing a URL to seeing the page.', 'Match an error to the step that failed.'], k=['DNS comes first; HTTPS encryption starts with the TLS handshake.']),
+    6: dict(title='Digital footprints and who owns your data', q=['Who collects data about me in an ordinary day, and what rules apply?'],
+            o=['Trace a day\'s digital footprint and the organisations that collect it.'], k=['The organisation that holds data is responsible for protecting it.']),
+}
+
+# Learner files for each practice task (relative to weeks/week-N/practice/). Model answers are never published.
+PRACTICE = {
+    1: dict(title='My computer profile', files=['computer_profile_template.md']),
+    2: dict(title='Data detective', files=['data_detective_worksheet.md', 'mystery_files/file_a.png', 'mystery_files/file_b.pdf', 'mystery_files/invoice.pdf']),
+    3: dict(title='Software audit and command-line lab', files=['week3_lab_worksheet.md', 'lab_files/server.log']),
+    4: dict(title='Algorithm design', files=['algorithm_design_worksheet.md']),
+    5: dict(title='Network investigation and online safety checklist', files=['network_investigation_worksheet.md']),
+    6: dict(title='Capstone: IT and data health check', files=['health_check_template.md', 'case_study.md'], extra_readme='case_study.md'),
+}
+PRACTICE_Q = {
+    1: (['Can I describe the computer I use every day?'], ['Profile a computer\'s parts, advise on an upgrade and build a short timeline.'], ['Knowing the parts of a computer helps you choose and fix them.']),
+    2: (['Can I read data the way a computer stores it?'], ['Convert numbers, decode a hex message, unmask a disguised file and build a half adder.'], ['A file\'s first bytes tell you what it really is.']),
+    3: (['Can I audit software and use the command line on a real log?'], ['Sort software, search a server log and lock down private files.'], ['grep and permissions are everyday tools for analysts.']),
+    4: (['Can I design and test an algorithm before any code is written?'], ['Write pseudocode and a flowchart, trace them, compare searches and change an LMC program.'], ['Test an algorithm by hand with a trace table before you trust it.']),
+    5: (['Can I investigate how real websites are found, reached and secured?'], ['Read DNS records, status codes and certificates, and write a safety checklist.'], ['DNS, status codes and certificates are evidence you can check yourself.']),
+    6: (['Can I bring the whole course together to advise a real-world business?'], ['Carry out an IT and data health check and make prioritised recommendations.'], ['Good advice is specific, prioritised and in plain English.']),
+}
+
+# Course files that lessons link to (relative to the course folder). Answer files are never published.
+ASSETS = ['assets/lmc/add.lmc']

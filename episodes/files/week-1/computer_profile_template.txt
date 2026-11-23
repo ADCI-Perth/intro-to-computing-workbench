@@ -1,0 +1,49 @@
+# My computer profile
+
+**Name:**
+**Week:** 1
+
+> Do not record your computer's serial number, device name, user name or IP address.
+
+## Part 1: hardware profile
+
+**Which computer did you use?** (for example: my own laptop, a work desktop, a library computer, my phone)
+
+| # | Part | Value shown on screen | What it does (one sentence) | IPOS label |
+|---|---|---|---|---|
+| 1 | Processor (CPU) name | | | |
+| 2 | Number of cores | | | |
+| 3 | Clock speed (base speed) | | | |
+| 4 | RAM (installed memory) | | | |
+| 5 | Storage type (SSD or HDD) | | | |
+| 6 | Storage size | | | |
+| 7 | Operating system and version | | | |
+
+**Screenshot:** paste or attach it here. Crop out the device name, serial number and user name.
+
+## Part 2: upgrade advice
+
+| User | Upgrade first (CPU, RAM or storage) | Reason |
+|---|---|---|
+| (a) Data analyst with very large spreadsheets | | |
+| (b) Office worker whose computer is slow to start and open files (has an HDD) | | |
+
+## Part 3: five-milestone timeline
+
+| # | Milestone | Approximate decade | What changed (one sentence) |
+|---|---|---|---|
+| 1 | | | |
+| 2 | | | |
+| 3 | | | |
+| 4 | | | |
+| 5 | My own computer: | | |
+
+(Or attach a photo of a hand-drawn timeline.)
+
+## Part 4: reflection (100 to 150 words)
+
+1. Which part of your computer surprised you, and why?
+2. How does the IPOS cycle help you describe what your computer is doing?
+3. Name one thing about hardware you would like to understand better.
+
+*Write here.*

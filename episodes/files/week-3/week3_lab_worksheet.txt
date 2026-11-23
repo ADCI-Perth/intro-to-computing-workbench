@@ -1,0 +1,71 @@
+# Week 3 lab worksheet
+
+**Name:**
+**Week:** 3
+
+## Part 1: software audit
+
+**Operating system on the computer I used:**
+
+### Application software
+
+| # | Program | What it is for |
+|---|---|---|
+| 1 | | |
+| 2 | | |
+| 3 | | |
+| 4 | | |
+| 5 | | |
+
+### System software
+
+| # | Program | Kind (operating system, utility, driver) | What it does |
+|---|---|---|---|
+| 1 | | Operating system | |
+| 2 | | Utility | |
+| 3 | | Utility | |
+| 4 | | | |
+| 5 | | | |
+
+**Is the operating system up to date?** (yes, no, or can't tell)
+
+**Why do updates matter?** (one sentence)
+
+## Part 2: command-line lab
+
+### Step 4: investigate the server log
+
+| # | Question | Command I used | Answer |
+|---|---|---|---|
+| 1 | How many lines does the log have? | | |
+| 2 | Show only the ERROR lines | | (paste the lines) |
+| 3 | How many ERROR lines? | | |
+| 4 | How many failed logins? | | |
+| 5 | How many failed logins for `admin`? | | |
+| 6 | Save the ERROR lines to `errors.txt` and show it | | |
+
+### Step 5: permissions
+
+**Screenshot:** the output of `ls -l hr public`.
+
+### Step 6: command log
+
+Paste the output of `history`. Add one line after each command saying what it did.
+
+```
+(paste here)
+```
+
+## Part 3: what the log tells the office manager
+
+1.
+2.
+3.
+
+## Part 4: reflection (100 to 150 words)
+
+1. What did you find hardest about the command line, and what helped?
+2. Why did you set the HR files to owner-only? Use the words "least privilege".
+3. Give one example of how a cyber security analyst or a data analyst could use `grep` at work.
+
+*Write here.*

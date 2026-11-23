@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: 'Introduction to Computing: a six-week beginner course'
+message: >-
+  Please cite this lesson using the information in this file
+  when you refer to it in publications or adapt it.
+type: dataset
+authors:
+  - name: Australian Data and Cyber Institute (ADCI)
+abstract: >-
+  A six-week, browser-only beginner course (6 hours per week or
+  less) on computer hardware, data representation, operating
+  systems, algorithms, networks, security, privacy and ethics. It
+  prepares learners for computing study in cyber security or data
+  science.
+keywords:
+  - computing
+  - cyber security
+  - data science
+  - beginner

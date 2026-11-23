@@ -1,0 +1,78 @@
+# Case study: Harbour Street Physio
+
+[Back to the capstone task](README.md)
+
+> Harbour Street Physio is an **invented** business. All names, products and details are made up for this course.
+
+You have met this clinic before: in Week 3 you searched its server log, and in Week 5 you wrote a safety checklist for its new receptionist. The owner has now asked you for a short IT and data health check. Here is what you found when you visited.
+
+## The business
+
+- A physiotherapy clinic on one floor of a small building in an Australian suburb, open Monday to Saturday.
+- Annual turnover: about **$750,000**.
+- About 1,800 active clients, and records of about 6,000 past clients going back to 2015.
+
+## The people
+
+| Person | Role | Notes |
+|---|---|---|
+| Olivia Thompson | Owner and senior physiotherapist | Looks after "the IT" herself, in her spare time |
+| Jack Wilson | Physiotherapist | Full time |
+| Priya Nair | Physiotherapist | Part time, three days a week |
+| Mia Chen | Receptionist | Started last month (the receptionist from Week 5) |
+
+## The devices
+
+| # | Device | Operating system | Details |
+|---|---|---|---|
+| 1 | Reception desktop PC | Windows 10 | Bought in 2018. Everyone at reception logs in with one shared account, `reception`. The password is on a sticky note under the keyboard. |
+| 2 | Olivia's laptop | Windows 11 | Updates install automatically. She also takes it home and uses it for personal banking. |
+| 3 | Two consulting-room PCs | Windows 11 | Bought in 2022. Staff click "Remind me later" when updates appear, because restarts interrupt appointments. |
+| 4 | Office server, in the storeroom | Linux | The server from Week 3. It holds the shared folders. Its log shows the disk is over 90% full, repeated failed logins for `admin`, a backup that failed because the storage device was not found, and antivirus definitions out of date. |
+| 5 | Wi-Fi router | Router firmware from the internet provider | Supplied by the internet provider in 2017. The admin password is still the one printed on the sticker. |
+| 6 | Tablet in the gym area | Android | Used to show exercise videos to clients. Bought in 2016; it no longer receives updates. |
+| 7 | Printer and scanner | Built-in software | Scans GP referral letters into the server's `Referrals` folder. |
+| 8 | Staff's own mobile phones | iOS and Android | Used to read work email. Staff sometimes film clients doing exercises, to send them as reminders. |
+
+## The software
+
+| Software | Kind | Details |
+|---|---|---|
+| **ClinicDesk** (invented) | Cloud practice management system (SaaS) | Bookings, client details, treatment notes and invoices. The provider says data is stored in its **Sydney** data centre and backed up daily. Every staff member has a ClinicDesk login. MFA is available but **turned off**. |
+| **Microsoft 365** | Cloud email and Office (SaaS) | Email for all staff. MFA is **turned off**. Includes cloud file storage (OneDrive and SharePoint) that the clinic does not use yet. |
+| Microsoft Office desktop apps | Application software | Macros are allowed in all Office files (the default the clinic has never changed). |
+| A free PDF reader | Application software | Last updated in 2021. |
+| Antivirus | Utility | Installed on every PC; out of date on the server. |
+| A free generative AI chatbot | Web tool | Jack sometimes pastes treatment notes into it to help write letters to clients' GPs. |
+
+## The network
+
+- The internet arrives through an **NBN** connection to the **Wi-Fi router** (device 5).
+- A **switch** in the storeroom connects the reception PC, the consulting-room PCs, the server and the printer by cable.
+- There is **one Wi-Fi network**, `HarbourPhysio`, used by staff devices, the tablet **and** clients in the waiting room. Its password is on a sign at reception.
+- There is **no separate firewall**, apart from the router's built-in one.
+
+## The data
+
+| Data | Where it is kept | Who can see it |
+|---|---|---|
+| Client details (name, address, date of birth, phone, email, Medicare and health fund numbers) | ClinicDesk | All staff |
+| Treatment notes | ClinicDesk | All staff |
+| Appointment bookings | ClinicDesk | All staff |
+| Invoices and payment records | ClinicDesk | All staff |
+| Scanned GP referral letters and X-ray and scan reports (PDFs and images) | Server, `Referrals` folder | Everyone on the office network: the folder has no permissions set |
+| Marketing list: client names, emails and birthdays, used to send a birthday discount | A spreadsheet on the server, exported from ClinicDesk | Everyone on the office network |
+| Staff records, including tax file numbers and bank account details | A spreadsheet on Olivia's laptop | Olivia |
+| Exercise videos of clients | Staff's own phones | Each staff member |
+| Email | Microsoft 365 | Each staff member |
+| CCTV recordings of the waiting room | A recorder in the storeroom, kept for 30 days | Olivia |
+| Paper intake forms from 2015 to 2020 (before ClinicDesk) | An unlocked filing cabinet in the storeroom | Anyone who enters the storeroom |
+
+## Current habits and recent events
+
+- **Backups:** the server backs up every night to a USB drive that stays plugged into the server. The drive is not encrypted. Nobody has ever tested restoring from it. Some nights the backup fails (as in the Week 3 log).
+- **Passwords:** Olivia admits she uses the same password for her work email and her online banking.
+- **Admin rights:** every staff member's Windows account is an administrator account.
+- **Phishing:** last month Mia received an email that looked like an invoice from the clinic's equipment supplier, with new bank details. She nearly paid it, but Olivia noticed the change.
+- **Old equipment:** when the reception PC is replaced, Olivia plans to sell it online "as is".
+- **The owner's question:** Olivia is thinking of closing down the server and moving all its files to the cloud. She has seen an advertisement for **FileBox** (invented), a cheap cloud storage service whose servers are in another country, and wonders whether to use that or the OneDrive and SharePoint storage that comes with Microsoft 365. The clinic's Microsoft 365 account was set up in Australia, and its admin page shows that the clinic's data, including OneDrive and SharePoint files, is **stored in Australia**.

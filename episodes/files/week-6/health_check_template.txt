@@ -1,0 +1,103 @@
+# IT and data health check: Harbour Street Physio
+
+**Name:**
+**Week:** 6
+**Prepared for:** Olivia Thompson, owner
+
+## Summary for the owner
+
+*Write this last: two or three sentences on the clinic's biggest risks and the first thing to do.*
+
+## Part 1: hardware and software
+
+| # | Device | Operating system | Supported and up to date? |
+|---|---|---|---|
+| 1 | | | |
+| 2 | | | |
+| 3 | | | |
+| 4 | | | |
+| 5 | | | |
+| 6 | | | |
+| 7 | | | |
+| 8 | | | |
+
+**Problems found (at least three):**
+
+| Problem | Why it matters |
+|---|---|
+| 1. | |
+| 2. | |
+| 3. | |
+
+## Part 2: data
+
+| Data | Where stored | Structured, semi-structured or unstructured | Personal? | Sensitive? |
+|---|---|---|---|---|
+| 1. | | | | |
+| 2. | | | | |
+| 3. | | | | |
+| 4. | | | | |
+| 5. | | | | |
+| 6. | | | | |
+
+**Lifecycle problem (stage, problem and what to do instead):**
+
+## Part 3: network and safety
+
+**Network diagram:** insert your diagram here.
+
+| Weakness | What could go wrong | Part of the CIA triad |
+|---|---|---|
+| 1. | | |
+| 2. | | |
+
+## Part 4: the cloud
+
+**Recommendation:**
+
+| Benefits | Risks |
+|---|---|
+| 1. | 1. |
+| 2. | 2. |
+
+**Where the data would be stored, and why it matters:**
+
+**Service model, and what the clinic is still responsible for:**
+
+## Part 5: privacy, security and ethics
+
+**Is the clinic covered by the Privacy Act? Why?**
+
+| APP | Example where the clinic is not meeting it |
+|---|---|
+| | |
+| | |
+| | |
+
+**Would a stolen USB backup drive be a notifiable data breach? Why?**
+
+| Essential Eight strategy | What the clinic does now | What is missing |
+|---|---|---|
+| | | |
+| | | |
+| | | |
+
+**Ethics issue (the problem, and what should change):**
+
+## Part 6: recommendations, in priority order
+
+| Priority | Action | Why (which problem it fixes) | Effort (low, medium or high) |
+|---|---|---|---|
+| 1 | | | |
+| 2 | | | |
+| 3 | | | |
+| 4 | | | |
+| 5 | | | |
+
+## Part 7: reflection (150 to 200 words)
+
+1. What do you now understand about computing that you did not understand in Week 1? Give two specific examples.
+2. Which part of this health check would matter most to a cyber security analyst, and which to a data analyst? Why?
+3. What will you do next to keep learning?
+
+*Write here.*
