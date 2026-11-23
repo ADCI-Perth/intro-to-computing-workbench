@@ -1,0 +1,20 @@
+2026-11-02 08:01:12 INFO User olivia.thompson logged in
+2026-11-02 08:03:40 ERROR Disk usage above 90 percent on /data
+2026-11-02 08:15:05 WARNING Failed login for user admin
+2026-11-02 08:15:09 WARNING Failed login for user admin
+2026-11-02 08:15:14 WARNING Failed login for user admin
+2026-11-02 08:20:31 INFO User jack.wilson logged in
+2026-11-02 09:02:47 INFO Backup started
+2026-11-02 09:44:18 ERROR Backup failed: storage device not found
+2026-11-02 10:10:02 INFO User priya.nair logged in
+2026-11-02 11:30:55 WARNING Failed login for user jack.wilson
+2026-11-02 11:31:20 INFO User jack.wilson logged in
+2026-11-02 12:05:33 INFO Software update installed: printer driver 4.2
+2026-11-02 13:47:09 ERROR Printer offline: OFFICE-PRN-01
+2026-11-02 14:22:41 WARNING Failed login for user admin
+2026-11-02 14:22:46 WARNING Failed login for user admin
+2026-11-02 15:00:00 INFO Backup started
+2026-11-02 15:38:12 INFO Backup completed
+2026-11-02 16:59:58 INFO User olivia.thompson logged out
+2026-11-02 17:04:23 ERROR Antivirus definitions out of date
+2026-11-02 17:30:00 INFO User jack.wilson logged out

@@ -1,0 +1,7 @@
+        INP
+        STA FIRST
+        INP
+        ADD FIRST
+        OUT
+        HLT
+FIRST   DAT
