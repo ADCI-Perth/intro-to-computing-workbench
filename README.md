@@ -1,6 +1,6 @@
 # Introduction to Computing (Workbench version)
 
-**Site:** https://adci-perth.github.io/intro-to-computing-workbench/
+**Site:** https://adci-perth.github.io/intro-to-computing-workbench/ (once the repository is made public and GitHub Pages is switched on for the `gh-pages` branch)
 
 The website version of ADCI's six-week, browser-only beginner course *Introduction to Computing*, built with [The Carpentries Workbench](https://carpentries.github.io/sandpaper-docs/). It is a staging step before the course goes into Canvas.
 
