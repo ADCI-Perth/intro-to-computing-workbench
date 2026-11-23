@@ -1,0 +1,80 @@
+# Algorithm design worksheet
+
+**Name:**
+**Week:** 4
+
+## Part 1: pseudocode
+
+**Decomposition** (three or four smaller parts):
+
+1.
+2.
+3.
+4.
+
+**Pseudocode:**
+
+```
+(write here)
+```
+
+## Part 2: flowchart
+
+Insert your flowchart image here (exported from diagrams.net, or a photo of a hand drawing).
+
+## Part 3: trace tables
+
+**Test 1:** starting stamps 0; days Monday, Tuesday, Wednesday.
+
+| Pass | day | price | stamps | total | Output |
+|---|---|---|---|---|---|
+| Start | – | – | 0 | 0 | |
+| 1 | | | | | |
+| 2 | | | | | |
+| 3 | | | | | |
+| End | | | | | |
+
+**Test 2:** starting stamps 7; days Tuesday, Wednesday, Thursday, Friday.
+
+| Pass | day | price | stamps | total | Output |
+|---|---|---|---|---|---|
+| Start | – | – | 7 | 0 | |
+| 1 | | | | | |
+| 2 | | | | | |
+| 3 | | | | | |
+| 4 | | | | | |
+| End | | | | | |
+
+**Did you change your pseudocode after tracing? What changed?**
+
+## Part 4: linear search compared with binary search
+
+| Name | Linear search: checks | Binary search: names checked, in order | Binary search: checks |
+|---|---|---|---|
+| Patel | | | |
+| Brown | | | |
+
+**Which was faster for each, and why is binary search still better for a long, sorted list?**
+
+## Part 5: Little Man Computer
+
+**My subtract program:**
+
+```
+(paste here)
+```
+
+| Inputs | Expected output | My output |
+|---|---|---|
+| 9 and 4 | 5 | |
+| 3 and 9 | −6 | |
+
+**Screenshot:** the simulator after the 3 and 9 run.
+
+## Part 6: reflection (100 to 150 words)
+
+1. Did your trace tables find a mistake? If so, what was it? If not, how did you check carefully?
+2. What surprised you about how many machine instructions a simple task needs?
+3. How might you use algorithm design in cyber security or data science?
+
+*Write here.*

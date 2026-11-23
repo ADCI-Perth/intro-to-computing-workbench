@@ -1,0 +1,74 @@
+# Network investigation worksheet
+
+**Name:**
+**Week:** 5
+
+## Part 1: DNS records
+
+| Domain | A record (IP addresses) | Public or private? How do you know? | MX records (priority and mail server) |
+|---|---|---|---|
+| `abc.net.au` | | | |
+| `csiro.au` | | | |
+
+**What would go wrong if the MX records were deleted? If the A record pointed to the wrong address?**
+
+## Part 2: requests and status codes
+
+**Requests on `https://www.abc.net.au`:**
+
+| Request (name) | Type | Method | Status | Size |
+|---|---|---|---|---|
+| Main page | document | | | |
+| An image | | | | |
+| A script | | | | |
+
+**Total number of requests:**
+**Why does one page need so many?**
+
+**`https://www.csiro.au/this-page-does-not-exist`, status code:**
+
+**`http://abc.net.au`, first status code, and where it sent you:**
+**What happened, and why does the site do this?**
+
+## Part 3: certificates
+
+| Website | Issued to | Issued by | Valid to |
+|---|---|---|---|
+| `https://www.abc.net.au` | | | |
+| `https://www.csiro.au` | | | |
+
+**If the certificate's name did not match the address bar, what would the browser do, and why?**
+
+## Part 4: the path of a request
+
+Insert your diagram here.
+
+## Part 5: phishing quiz
+
+**Score:**
+
+| Clue | Example from the quiz |
+|---|---|
+| 1. | |
+| 2. | |
+
+## Part 6: online safety checklist for the new receptionist
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+
+## Part 7: reflection (100 to 150 words)
+
+1. What surprised you most about what happens behind one web page?
+2. Which part of the CIA triad does HTTPS protect, and which part does a backup protect?
+3. How could DNS records, status codes or certificates help a cyber security analyst or a data analyst at work?
+
+*Write here.*

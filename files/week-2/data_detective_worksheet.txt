@@ -1,0 +1,73 @@
+# Data detective worksheet
+
+**Name:**
+**Week:** 2
+
+## Part 1: conversions
+
+Show your working under each one (place-value table, steps or groups of four bits).
+
+| # | Convert | Answer |
+|---|---|---|
+| 1 | 13 (decimal) to 8-bit binary | |
+| 2 | 100 (decimal) to 8-bit binary | |
+| 3 | 255 (decimal) to 8-bit binary | |
+| 4 | `101101` (binary) to decimal | |
+| 5 | `11110000` (binary) to decimal | |
+| 6 | 200 (decimal) to hex | |
+| 7 | `3F` (hex) to decimal | |
+| 8 | `11011010` (binary) to hex | |
+| 9 | `A7` (hex) to 8-bit binary | |
+| 10 | Add in binary: `1011` + `0110`, and check in decimal | |
+
+**Working:**
+
+## Part 2: the hidden message
+
+`53 45 45 20 59 4F 55 20 49 4E 20 57 45 45 4B 20 33`
+
+**Decoded message:**
+
+**My first name in hex ASCII:**
+
+## Part 3: the file in disguise
+
+| File | First four bytes (hex) | Real file type |
+|---|---|---|
+| `file_a.png` | | |
+| `file_b.pdf` | | |
+| `invoice.pdf` | | |
+
+**Which file is disguised, and how do you know?**
+
+**Why might an attacker give a file the wrong extension, and why should a security tool check the signature?**
+
+**Screenshot:** HexEd.it showing the start of the disguised file.
+
+## Part 4: colour codes
+
+| Hex code | Red | Green | Blue | Colour name |
+|---|---|---|---|---|
+| `#FF8000` | | | | |
+| `#800080` | | | | |
+| `#C0C0C0` | | | | |
+| My own colour: | | | | |
+
+## Part 5: half adder
+
+| A | B | Sum (XOR) | Carry (AND) |
+|---|---|---|---|
+| 0 | 0 | | |
+| 0 | 1 | | |
+| 1 | 0 | | |
+| 1 | 1 | | |
+
+**Screenshot:** the CircuitVerse circuit with A = 1 and B = 1.
+
+## Part 6: reflection (100 to 150 words)
+
+1. Which part of this week's work was hardest, and what helped you understand it?
+2. Give one example of where a cyber security analyst or a data analyst would use hex or file signatures.
+3. How does your half adder connect to the CPU you met in Week 1?
+
+*Write here.*
